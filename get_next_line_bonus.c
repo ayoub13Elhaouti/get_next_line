@@ -42,7 +42,7 @@ char	*get_next_line(int fd)
 	static char	*str[FOPEN_MAX];
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd >= FOPEN_MAX || BUFFER_SIZE <= 0)
 		return (NULL);
 	str[fd] = ft_read(str[fd], fd);
 	if (!str[fd])
