@@ -51,17 +51,3 @@ char	*get_next_line(int fd)
 	str = ft_next(str);
 	return (line);
 }
-
-int	main(void)
-{
-	char	*tmp;
-	int		fd;
-
-	fd = open("File.txt", O_RDWR | O_CREAT, 0777);
-	if (fd == -1)
-		return (1);
-	while ((tmp = get_next_line(fd)) != NULL)
-		printf("%s", tmp);
-	close(fd);
-	return (0);
-}

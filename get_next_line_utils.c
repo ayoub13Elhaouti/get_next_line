@@ -72,6 +72,7 @@ char	*ft_line(char *str)
 	size_t	i;
 
 	i = 0;
+	line = NULL;
 	if (!str[0])
 		return (NULL);
 	while (str[i] && str[i] != '\n')
