@@ -6,7 +6,7 @@
 /*   By: ayoel-ha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 10:54:38 by ayoel-ha          #+#    #+#             */
-/*   Updated: 2023/12/21 11:53:06 by ayoel-ha         ###   ########.fr       */
+/*   Updated: 2024/01/04 18:05:21 by ayoel-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,18 @@ char	*get_next_line(int fd)
 	str = ft_next(str);
 	return (line);
 }
+/*
+
+int main()
+{
+	char	*str;
+	int	fd = open("file", O_RDWR | O_CREAT, 0777);
+	if (fd == -1)
+		printf("An Error Occured");
+	while ((str = get_next_line(fd)) != NULL)
+	{
+		printf("The Next String Is: %s\n", str);
+		free(str);
+	}
+	return (0);
+}*/
