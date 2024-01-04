@@ -6,7 +6,7 @@
 /*   By: ayoel-ha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 11:26:08 by ayoel-ha          #+#    #+#             */
-/*   Updated: 2023/12/21 12:18:18 by ayoel-ha         ###   ########.fr       */
+/*   Updated: 2024/01/04 18:37:01 by ayoel-ha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE
+#  define BUFFER_SIZE 0
 # endif
 
 char	*get_next_line(int fd);
